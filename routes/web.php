@@ -24,6 +24,10 @@ Route::middleware('auth')->prefix('user')->group(function () {
     Route::get('/researcher-edit/{id}', 'admin\ResearcherController@edit')->name('researher.edit');
     Route::get('/researcher-delete/{id}', 'admin\ResearcherController@delete')->name('researher.delete');
     Route::post('/researcher-update', 'admin\ResearcherController@update')->name('researcher-update');
+    Route::get('/researcher-add', 'admin\ResearcherController@add')->name('researcher.add');
+    Route::post('/researcher-create', 'admin\ResearcherController@create')->name('researcher-create');
+    Route::get('/admin/edit/profile', 'admin\ResearcherController@admin_edit')->name('user.update-profile');
+    Route::post('/admin/update', 'admin\ResearcherController@admin_update')->name('admin-update');
 
     Route::get('/research-progress', 'research\ResearchController@index')->name('user.research-progress');
     Route::get('/add-progress', 'research\ResearchController@add')->name('add-progress');

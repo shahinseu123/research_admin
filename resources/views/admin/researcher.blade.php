@@ -10,9 +10,9 @@
             <div class="flex justify-between text-white border-b-2 border_secondary pb-4 mb-4">
                 <h1 class="text-3xl font-semibold text-gray-600">Researcher's</h1>
                 <div>
-                    {{-- <a class="px-5 py-2 rounded shadow bg-blue-600 text-white uppercase text-sm font-semibold"
-                        href="{{ route('user.brand.add') }}">
-                        <i class="fas fa-plus mr-2"></i>add brand</a> --}}
+                    <a class="px-5 py-2 rounded shadow bg-blue-600 text-white uppercase text-sm font-semibold"
+                        href="{{ route('researcher.add') }}">
+                        <i class="fas fa-plus mr-2"></i>add researcher</a>
                 </div>
             </div>
             <div class="container mx-auto">
